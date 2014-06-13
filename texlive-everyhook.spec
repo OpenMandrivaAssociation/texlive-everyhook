@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-everyhook
 Version:	1.1
-Release:	6
+Release:	7
 Summary:	Hooks for standard TeX token lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/everyhook
