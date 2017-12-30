@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 1.1
 Name:		texlive-everyhook
-Version:	1.1
-Release:	10
+Version:	1.2
+Release:	1
 Summary:	Hooks for standard TeX token lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/everyhook
