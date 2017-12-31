@@ -1,9 +1,3 @@
-# revision 21298
-# category Package
-# catalog-ctan /macros/latex/contrib/everyhook
-# catalog-date 2011-02-04 11:55:08 +0100
-# catalog-license lppl1.3
-# catalog-version 1.1
 Name:		texlive-everyhook
 Version:	1.2
 Release:	1
@@ -37,11 +31,10 @@ without interfering with the hooks.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/everyhook/everyhook.sty
-%doc %{_texmfdistdir}/doc/latex/everyhook/README
-%doc %{_texmfdistdir}/doc/latex/everyhook/everyhook.pdf
+%{_texmfdistdir}/tex/latex/everyhook
+%doc %{_texmfdistdir}/doc/latex/everyhook
 #- source
-%doc %{_texmfdistdir}/source/latex/everyhook/everyhook.dtx
+%doc %{_texmfdistdir}/source/latex/everyhook
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,17 +45,3 @@ without interfering with the hooks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 751669
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 718392
-- texlive-everyhook
-- texlive-everyhook
-- texlive-everyhook
-- texlive-everyhook
-
