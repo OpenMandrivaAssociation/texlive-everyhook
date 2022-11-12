@@ -1,13 +1,13 @@
 Name:		texlive-everyhook
-Version:	1.2
-Release:	2
+Version:	35675
+Release:	1
 Summary:	Hooks for standard TeX token lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/everyhook
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +22,12 @@ compatibility, each of the \everyX token lists can be set
 without interfering with the hooks.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,7 +38,8 @@ without interfering with the hooks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
