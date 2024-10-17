@@ -3,7 +3,7 @@ Version:	35675
 Release:	2
 Summary:	Hooks for standard TeX token lists
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/everyhook
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/everyhook
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/everyhook.doc.r%{version}.tar.xz
